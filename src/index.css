@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #c5e0dc; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  width: 100%;
+  max-width: 800px;  
+  min-width: 500px;   
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.card-header {
+  background: #006d5b; /* dark green */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.card-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.input-group label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  border: none;
+  border-bottom: 2px solid #006d5b;
+  padding: 8px 5px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.error-text {
+  font-size: 12px;
+  color: red;
+  margin-top: 4px;
+}
+
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+
+.btn {
+  width: 100%;
+  background: #006d5b;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #004c40;
+}
+
+
+.form-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.form-footer a {
+  color: #006d5b;
+  text-decoration: underline;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 35px; 
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-header h2 {
+    font-size: 18px;
+  }
+}
